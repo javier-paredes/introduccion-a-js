@@ -157,8 +157,6 @@
 
 
 
-
-
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
@@ -223,9 +221,9 @@
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
 
+let imagen = document.querySelector('img');
 
-
-
+imagen.src = "img/kittens.jpeg";
 
 
 /*
@@ -249,8 +247,9 @@
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
 
+const twitter = document.querySelector('.twitter');
 
-
+twitter.style.color ='cyan';
 
 
 /*

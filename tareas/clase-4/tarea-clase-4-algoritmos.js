@@ -338,6 +338,40 @@ numerosPositivos();
 
 // DESAFIO 13:
 
-const a = [3, 20, 37, 19, 2, 5, 8 , 4];
-let max = Math.max(...a);
-console.log(max);
+/*
+let a = [3, 20, 37, 19, 2, 5, 8, 4];
+let numeroMaximoArray = 0;
+for (i = 0; i < a.length; i++){
+  
+  if (a[i] > numeroMaximoArray){
+    numeroMaximoArray = a[i];
+  }
+}
+console.log(numeroMaximoArray);
+*/
+
+// DESAFIO 14:
+
+
+function fibonacci(){
+  let arrayFibonacci = [0, 1];
+  for (i = 2; i <= 10; i++){
+    arrayFibonacci.push(arrayFibonacci[i-2] + arrayFibonacci[i-1]);
+    
+  }
+  console.log(arrayFibonacci);
+}
+fibonacci();
+
+// DESAFIO 15:  Crear una función que encuentre el número n de Fibonacci usando recursión
+
+function numeroFibonacci(n) {
+  if (n < 2){
+    return n
+  } else {
+  return numeroFibonacci(n - 1) + numeroFibonacci (n - 2)
+  }
+}
+
+console.log(numeroFibonacci(1));
+
