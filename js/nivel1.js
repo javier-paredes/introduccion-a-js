@@ -183,7 +183,13 @@
 // la 1ra variable multiplicada (con el operador *) por la 2nda variable.
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
+let diez = 10;
+let tres = 3;
+let resultadoMultiplicacion;
 
+resultadoMultiplicacion = (diez * tres);
+
+console.log(resultadoMultiplicacion);
 /*
     Funciones
     =========

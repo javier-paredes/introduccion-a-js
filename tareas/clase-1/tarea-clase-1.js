@@ -68,7 +68,7 @@ function pruebaHoisting(){
 //pruebaHoisting();
 */
 
-
+/*
 var a = 1; //global
 let b = 2; //global
 
@@ -100,8 +100,21 @@ prueba(3);
 
 console.log('a vale: ' + a); // 1
 console.log('b vale: ' + b); // 2
+
+*/
+
+
 // console.log('c vale: ' + c); // error
 // console.log('d vale: ' + d); // error
 // console.log('e vale: ' + e); // error
 // console.log('f vale: ' + f); // error
 
+
+const bool = (5 > 2);
+
+console.log(bool);              //true    
+console.log(!bool);             //false
+console.log(bool || bool);      //true
+console.log(bool || !bool);     //true
+console.log(bool && bool);      //true
+console.log(bool && !bool);     //false
