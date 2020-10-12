@@ -146,6 +146,7 @@
 
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
+const mediaLinks = document.querySelectorAll("li");
 
 
 
@@ -154,15 +155,17 @@
 // TAREA: Ahora utilizá console.log para ver la cantidad de 
 // elementos li que hay con mediaLinks.length
 
-
-
+console.log(mediaLinks);
+console.log(mediaLinks.length);
 
 
 
 // TAREA: ¿Te acordás de los bucles del nivel 2? Usando lo que sabés de ellos, realizá iteraciones
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
-
+for ( i=0 ; i < mediaLinks.length ; i++) {
+    console.log(mediaLinks[i]);
+}
 
 
 
@@ -185,8 +188,9 @@
 // y utilizá console.log para mostrarlo.
 
 
+let titulo = document.querySelector('h1');
 
-
+titulo.textContent = 'Hola r/ArgentinaPrograma'
 
 
 /*
@@ -205,8 +209,9 @@
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
+const nombreUsuario = prompt('¿Cómo te llamás?');
 
-
+titulo.textContent = ('Hola, ' + nombreUsuario) + '!';
 
 
 /*
@@ -223,9 +228,9 @@
 
 // TAREA: Actualizá el valor del atributo 'src' de nuestra etiqueta 'img' a "img/kittens.jpeg".
 
+let imagen = document.querySelector('img');
 
-
-
+imagen.src = "img/kittens.jpeg";
 
 
 /*
@@ -249,9 +254,15 @@
 // Tarea: Obtené cualquier elemento de la página y cambiale algunos estilos.
 
 
+const twitter = document.querySelector('.twitter');
 
+twitter.style.color ='cyan';
 
+/*
+titulo.style.backgroundColor = 'red';
 
+titulo.style.color = 'white';
+*/
 
 /*
    Creando nuevos nodos (Elementos)
@@ -272,14 +283,24 @@
     nodoPagina.appendChild(nuevoParrafo);
 */
 
+const nodoPagina = document.querySelector('body');
+const nuevaFrase = document.createElement('p');
+const textoFrase = document.createTextNode('Yaah Yeeeeet!!!');
+nuevaFrase.appendChild(textoFrase);
+nodoPagina.appendChild(nuevaFrase);
+nuevaFrase.style.fontSize = '100px';
+
 // Tarea: Todavía seguís teniendo a los gatitos en tu pantalla? A mí me gusta el logo y los gatitos.
 //       Creá una nueva imagen con nuestro logo como fuente, y ponela
 //       en nuestra cabecera.
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
+const nodoImagen = document.createElement('img');
 
+nodoImagen.src = 'img/woman_bw.jpg';
 
+document.querySelector('header').appendChild(nodoImagen);
 
 
 

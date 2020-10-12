@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Salarios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='salario.css'>
+</head>
+<body>
+
+
+<!--
+TAREA:
+Crear una interfaz que permita agregar ó quitar (botones agregar y quitar) inputs+labels 
+para completar el salario anual de cada integrante de la familia que trabaje.
+Al hacer click en "calcular", mostrar en un elemento pre-existente el mayor salario anual, 
+menor salario anual, salario anual promedio y salario mensual promedio.
+
+Punto bonus: si hay inputs vacíos, ignorarlos en el cálculo (no contarlos como 0).
+-->
+
+
+
+<div>
+<label for="crear-integrante">Presione para agregar integrantes:</label>
+<button type="submit" id="crear-integrante">Agregar</button> 
+<label for="borrar-integrante">Presione para borrar integrantes:</label>
+<button type="submit" id="borrar-integrante">Borrar</button>
+
+</div>
+
+<div id="integrantes"></div>
+
+<button type="submit" id ="calcular" class="oculto">Calcular</button>
+
+<div>
+    <p>El mayor salario anual es de <strong id="mayor-salario"></strong> </p>
+    <p>El menor salario anual es de <strong id="menor-salario"></strong></p>
+    <p>El salario anual promedio es de <strong id="salario-promedio-anual"></strong></p>
+    <p>El salario mensual promedio es de <strong id="salario-promedio-mensual"></strong></p>
+    
+</div>
+
+
+<script src='salario.js'></script>
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tarea 2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='salario.js'>
+
+</head>
+<body>
+    <form>
+        <button id='agregar'>Agregar</button>
+        <button id='quitar'>Quitar</button>
+        <div id='integrantes'></div>
+        <button class='oculto' id='calcular'>Calcular</button>
+    </form>
+    <div class='oculto' id='resultados'>
+        <p>Mayor salario anual: <strong id='mayor-anual'></strong></p>
+        <p>Menor salario anual: <strong id='menor-anual'></strong></p>
+        <p>Promedio salario anual: <strong id='promedio-anual'></strong></p>
+        <p>Promedio salario mensual: <strong id='promedio-mensual'></strong></p>
+    </div>
+    <script src='salario.js'></script>
+</body>
+</html>
+-->
